@@ -1,12 +1,75 @@
-# React + Vite
+# Speakify – Text-to-Speech Capstone Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** [Speakify on GitHub Pages](https://YourUsername.github.io/YourRepoName/)
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Speakify is a fun and interactive **Text-to-Speech (TTS) web app** that converts typed text into natural-sounding speech. It supports multiple languages and voices, with a lively frontend featuring emojis and animations.
 
-## Expanding the ESLint configuration
+This project is a **capstone for cloud computing and frontend development**, integrating **AWS Lambda** for backend TTS processing and **GitHub Pages** for hosting the frontend.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Features
+
+- Multi-language support (e.g., English US, French)  
+- Multiple voice options  
+- Animated avatars and emojis that react while speaking or typing  
+- Interactive UI with glow effects, stylish fonts, and a vibey welcome message  
+- Instant audio playback through AWS Lambda backend  
+- Hosted live on GitHub Pages
+
+---
+
+## Technologies Used
+
+- Frontend: HTML, CSS, JavaScript  
+- Styling & Animations: TailwindCSS, CSS animations  
+- Backend: AWS Lambda, Amazon Polly via API Gateway  
+- Hosting: GitHub Pages  
+
+---
+
+## Installation / Run Locally
+
+1. Clone the repo:  
+```bash
+git clone https://github.com/sgracemahama-lab/speakify-tts.git
+
+Open index.html in a browser.
+
+The frontend fetches audio from the live AWS Lambda backend, so no additional backend setup is required.
+
+
+How It Works
+
+User types text into the Speakify input box.
+
+Click GENERATE to send text to the AWS Lambda TTS function.
+
+Lambda uses Amazon Polly to generate audio.
+
+Frontend receives the audio (base64), converts it to a playable format, and plays it.
+
+Animated emojis/avatar react in real time.
+
+
+Author
+
+Grace Sikeina Mahama
+Cloud Computing & Frontend Developer
+https://github.com/sgracemahama-lab
+
+
+---
+
+All you need to do now:  
+
+1. Replace `YourUsername` and `YourRepoName` with your GitHub info.  
+2. Save as `README.md` in the root of your repo.  
+3. Push to GitHub:  
+
+```bash
+git add README.md
+git commit -m "Add README for Speakify capstone"
+git push
